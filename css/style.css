@@ -8,9 +8,22 @@ body {
   padding: 10px;
 }
 
+main {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
 .box {
   position: relative;
   display: inline-block;
+  cursor:pointer;
+}
+.box:nth-child(even) .discount{
+  background: red;
+}
+.box:hover .heart{
+ z-index: 1;
 }
 
 .discount {
@@ -26,8 +39,5 @@ body {
   right: 50%;
   padding-bottom: 10px;
   color: red;
-}
-
-.box:nth-child(even) .discount{
-  background: red;
+  z-index: -1;
 }
