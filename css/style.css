@@ -9,17 +9,13 @@ body {
 }
 
 .box {
-  position:relative;
-  background: red;
-  border: 1px solid yellow;
-  width: 300px;
-  height: 372px;
+  position: relative;
   display: inline-block;
-
 }
 
 .discount {
   position: absolute;
+  top:0;
   right:0;
   background:green;
 }
@@ -28,4 +24,10 @@ body {
   position: absolute;
   bottom: 0;
   right: 50%;
+  padding-bottom: 10px;
+  color: red;
+}
+
+.box:nth-child(even) .discount{
+  background: red;
 }
